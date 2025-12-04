@@ -23,7 +23,7 @@ WORKDIR /app
 # Copiar JAR construido desde la fase anterior
 COPY --from=builder /app/target/*.jar app.jar
 
-# Exponer el puerto de tu backend (Spring Boot usa 8080)
+# Exponer el puerto de mi backend
 EXPOSE 8080
 
 # Comando de inicio
